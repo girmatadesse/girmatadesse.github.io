@@ -3,309 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Consulting Excellence</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-                        url('/api/placeholder/1200/600');
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-        
-        section:nth-child(even) {
-            background-color: var(--light-bg);
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Contact Form */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-top: 0.5rem;
-        }
-        
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--secondary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #2980b9;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 3rem 0;
-            margin-top: 4rem;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Girma Tadesse | Business Consultant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <h2>Business Excellence</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#industries">Industries</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Driving Success Across Industries with Proven Expertise</h1>
-            <p>From manufacturing to retail, wholesale to healthcare – we deliver tailored solutions to elevate your business.</p>
-            <a href="#contact" class="btn">Contact Us Today</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Your Trusted Partner in Business Excellence</h2>
-            <p>We are a team of dedicated business consultants with a track record of success in multiple industries. Whether you're streamlining production in manufacturing, optimizing supply chains in wholesale, enhancing customer experiences in retail, or navigating regulatory complexities in healthcare, we have the expertise to guide you.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Deep Industry Insights</h3>
-                    <p>Leveraging years of experience across sectors</p>
-                </div>
-                <div class="service-card">
-                    <h3>Collaborative Partnerships</h3>
-                    <p>Working together to achieve your goals</p>
-                </div>
-                <div class="service-card">
-                    <h3>Data-Driven Strategies</h3>
-                    <p>Making decisions based on solid analytics</p>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-semibold text-gray-800">Girma Tadesse</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">Comprehensive Consulting Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Manufacturing</h3>
-                    <ul>
-                        <li>Process optimization</li>
-                        <li>Lean manufacturing strategies</li>
-                        <li>Technology integration</li>
-                    </ul>
+    <!-- Hero Section -->
+    <div id="home" class="bg-blue-700 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="md:w-2/3">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Strategic Business Solutions for Your Success</h1>
+                <p class="text-xl mb-8">Transform your business with expert consulting services tailored to your needs</p>
+                <a href="#contact" class="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-chart-line text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Strategic Planning</h3>
+                    <p class="text-gray-600">Develop comprehensive business strategies to achieve your organizational goals</p>
                 </div>
-                <div class="service-card">
-                    <h3>Wholesale</h3>
-                    <ul>
-                        <li>Supply chain management</li>
-                        <li>Vendor negotiations</li>
-                        <li>Inventory control</li>
-                    </ul>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-users text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Business Development</h3>
+                    <p class="text-gray-600">Identify growth opportunities and expand your market presence</p>
                 </div>
-                <div class="service-card">
-                    <h3>Retail</h3>
-                    <ul>
-                        <li>Customer experience design</li>
-                        <li>Omni-channel strategies</li>
-                        <li>Sales optimization</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Healthcare</h3>
-                    <ul>
-                        <li>Compliance and regulation guidance</li>
-                        <li>Workflow efficiency</li>
-                        <li>Patient-centered improvements</li>
-                    </ul>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-cogs text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Process Optimization</h3>
+                    <p class="text-gray-600">Streamline operations and improve efficiency across your organization</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials">
-                <div class="testimonial-card">
-                    <p>"Our manufacturing plant saw a 20% efficiency boost within six months thanks to their strategies."</p>
-                    <strong>- John D., Plant Manager</strong>
+    <!-- About Section -->
+    <div id="about" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="/api/placeholder/600/400" alt="Girma Tadesse" class="rounded-lg shadow-lg w-full">
                 </div>
-                <div class="testimonial-card">
-                    <p>"They helped us streamline our supply chain, saving us thousands annually."</p>
-                    <strong>- Sarah K., Wholesale Director</strong>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Retail sales surged by 35% after implementing their customer experience recommendations."</p>
-                    <strong>- Maria L., Retail Owner</strong>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">About Girma Tadesse</h2>
+                    <p class="text-gray-600 mb-4">With over 15 years of experience in business consulting, Girma Tadesse has helped numerous organizations achieve their strategic objectives and drive sustainable growth.</p>
+                    <p class="text-gray-600 mb-6">Specializing in strategic planning, business development, and operational excellence, Girma brings a wealth of knowledge and expertise to every client engagement.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter text-2xl"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Start Transforming Your Business Today</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+    <!-- Contact Section -->
+    <div id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center"><i class="fas fa-envelope w-6 text-blue-600"></i> contact@girmatadesse.com</p>
+                        <p class="flex items-center"><i class="fas fa-phone w-6 text-blue-600"></i> +251 123 456 789</p>
+                        <p class="flex items-center"><i class="fas fa-map-marker-alt w-6 text-blue-600"></i> Addis Ababa, Ethiopia</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+                <div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-2 border rounded">
+                        <input type="email" placeholder="Your Email" class="w-full p-2 border rounded">
+                        <textarea placeholder="Your Message" rows="4" class="w-full p-2 border rounded"></textarea>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Mr. Girma Tadesse Gebre</h3>
-                <p>📞 Phone: (555) 123-4567</p>
-                <p>📧 Email: contact@businessexcellence.com</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; 2024 Girma Tadesse. All rights reserved.</p>
             </div>
         </div>
     </footer>
